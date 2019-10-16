@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hannota</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <!-- 标题 -->
+    <p>JS汉诺塔小游戏</p>
+    <!-- 灰色容器 -->
+    <div class="content">
+        <!-- 三个柱子 -->
+        <div class="column" id="c1">
+            <div class="item" ></div>
+            <div class="item" ></div>
+            <div class="item" ></div>
+            <div class="item" ></div>
+            <div class="item" ></div>
+        </div>
+        <div class="column" id="c2"></div>
+        <div class="column" id="c3"></div>
+        <!-- 底部黑色 -->
+        <div class="bot"></div>
+    </div>
+    <!-- 移动按钮 -->
+    <div class="btn" id="btn">
+        <div class="btn-group">
+            <button from="c1" to="c3">左</button>
+            <button from="c1" to="c2">右</button>
+        </div>
+        <div class="btn-group">
+            <button from="c2" to="c1">左</button>
+            <button from="c2" to="c3">右</button>
+        </div>
+        <div class="btn-group">
+            <button from="c3" to="c2">左</button>
+            <button from="c3" to="c1">右</button>
+        </div>
+    </div>
+    <!-- 重置按钮 -->
+    <button class="reset" onClick="window.location.reload()">重新开始</button>
+</body>
+<script src="./index.js"></script>
+</html>
